@@ -150,7 +150,8 @@ class PIPXibViewController: UIViewController, PIPUsable {
         }
         return viewController
     }
-    
+
+    // PiPと全画面が切り替わった際
     func didChangedState(_ state: PIPState) {
         switch state {
         case .pip:
@@ -159,7 +160,8 @@ class PIPXibViewController: UIViewController, PIPUsable {
             print("PIPXibViewController.full")
         }
     }
-    
+
+    // PIPの位置が切り替わった時
     func didChangePosition(_ position: PIPPosition) {
         switch position {
         case .topLeft:
